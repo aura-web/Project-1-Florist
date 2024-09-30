@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floral Bliss</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-logo">Floral<span>Bliss</span>.</a>
+    <div class="navbar-nav">
+      <a href="index.html">index</a>
+      <a href="about.html">About us</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms and Condition</a>
+    </div>
+    <div class="navbar-extra">
+      <a href="#" id="search-button"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="login-button"><i data-feather="user"></i></a>
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+    
+    <!-- Search Form start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form end -->
+
+  </nav>
+
+  <!-- Catalog Section -->
+  <section id="catalog" class="catalog">
+    <h2><span>Cata</span>log</h2>
+    <p>The following are various kinds of flower catalogs in our shop ∧＿∧ </p>
+<div class="catalog-container">
+    <!-- Graduation Section -->
+    <div class="catalog-item" onclick="toggleProducts('graduation')">
+        <h3>Graduation</h3>
+        <img src="img/products/g.jpg" alt="Graduation">
+    </div>
+    <div id="graduation-products" class="product-list">
+        <ul>
+            <li>
+                <img src="img/products/g1.jpg" alt="Graduation Grace">
+                Graduation Grace - IDR 150K
+            </li>
+            <li>
+                <img src="img/products/g2.jpg" alt="Eternal Bloom">
+                Eternal Bloom - IDR 170K
+            </li>
+            <li>
+                <img src="img/products/g3.jpg" alt="Journey in Bloom">
+                Journey in Bloom - IDR 200K
+            </li>
+            <li>
+              <img src="img/products/g4.jpg" alt="Golden Horizon Bouquet">
+              Golden Horizon Bouquet - IDR 230K
+          </li>
+        </ul>
+    </div>
+
+    <!-- Valentine Section -->
+    <div class="catalog-item" onclick="toggleProducts('valentine')">
+        <h3>Valentine</h3>
+        <img src="img/products/v.jpg" alt="Valentine">
+    </div>
+    <div id="valentine-products" class="product-list">
+        <ul>
+            <li>
+                <img src="img/products/v1.jpg" alt="Nelumbo nucifera">
+                Nelumbo nucifera - IDR 150K
+            </li>
+            <li>
+                <img src="img/products/v2.jpg" alt="Prunus serrulate">
+                Prunus serrulate - IDR 200K
+            </li>
+            <li>
+                <img src="img/products/v3.jpg" alt="Paeonia">
+                Paeonia - IDR 250K
+            </li>
+            <li>
+              <img src="img/products/v4.jpg" alt="Lavandula">
+              Lavandula - IDR 300K
+          </li>
+        </ul>
+    </div>
+
+    <!-- Birthday Section -->
+    <div class="catalog-item" onclick="toggleProducts('birthday')">
+        <h3>Birthday</h3>
+        <img src="img/products/h.jpg" alt="Birthday">
+    </div>
+    <div id="birthday-products" class="product-list">
+        <ul>
+            <li>
+                <img src="img/products/h1.jpg" alt="Floral Symphony">
+                Floral Symphony - IDR 125K
+            </li>
+            <li>
+                <img src="img/products/h2.jpg" alt="Lush Birthday Bliss">
+                Lush Birthday Bliss - IDR 160K
+            </li>
+            <li>
+                <img src="img/products/h3.jpg" alt="Hydrangea macrophylla">
+                Hydrangea macrophylla - IDR 200K
+            </li>
+            <li>
+              <img src="img/products/h4.jpg" alt="Aster amellus">
+              Aster amellus - IDR 250K
+          </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleProducts(category) {
+        const categories = ['graduation', 'valentine', 'birthday'];
+        categories.forEach(function (item) {
+            const productList = document.getElementById(item + '-products');
+            if (item === category) {
+                productList.style.display = (productList.style.display === 'block') ? 'none' : 'block';
+            } else {
+                productList.style.display = 'none';
+            }
+        });
+    }
+</script>
+<!-- Footer start -->
+ 
+<footer>
+  <div class="socials">
+    <a href="#"><i data-feather="instagram"></i></a>
+    <a href="#"><i data-feather="twitter"></i></a>
+    <a href="#"><i data-feather="facebook"></i></a>
+  </div>
+
+  <div class="links">
+      <a href="index.html">index</a>
+      <a href="about.html">About us</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms and Condition</a>
+    </div>
+</footer>
+<!-- Footer end -->
+  <!-- Feather Icons -->
+  <script>
+    feather.replace()
+  </script>
+
+  <!-- My Javascript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
